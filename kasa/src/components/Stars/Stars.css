@@ -1,0 +1,22 @@
+.star-rating{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:3px;
+    margin-right: 3px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+   }
+   .star{
+    height: 30px;
+    width: 30px;
+   }
+   @media screen and (max-width: 1023px){
+   .star{
+    height: 15px;
+    width: 15px;
+    }
+    .star-rating{
+        margin-right: 0px;
+    }
+     
+   }

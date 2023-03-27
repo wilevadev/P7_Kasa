@@ -1,0 +1,40 @@
+.tag {
+  background-color: #ff6060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
+}
+
+.tag-text {
+  color: white;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .tag {
+    height: 18px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .tag-text {
+    
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+  }
+}

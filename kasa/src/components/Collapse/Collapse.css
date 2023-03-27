@@ -1,0 +1,88 @@
+.collapsible button {
+  justify-content: center;
+  height: 47px;
+  background-color: #FF6060;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.collapsible button:hover {
+  background-color: #ff4d4d;
+}
+
+.collapsible button::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%) rotate(-90deg); 
+  height: 26.40000152587893px;
+  width: 15.560005187988295px;
+  right:11.8px;
+  top: 50%;
+  border-radius: 0px;
+  background-image: url("../../assets/img/flecheg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.collapsible.active button::before {
+  transform: translateY(-50%) rotate(90deg); 
+}
+
+.collapsible .content {
+  
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  display: none;
+  background-color: #f6f6f6;
+  color: #FF6060;
+  width: 100%;
+}
+
+.collapsible.active .content {
+  display: block;
+  margin-top: -10px;
+}
+.content{
+ 
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+   
+}
+
+@media screen and (max-width: 1023px) {
+  .collapsible button {
+    height: 30px;
+    border-radius: 5px;
+  }
+  .collapsible button::before {
+    height: 15.195881843566895px;
+    width: 8.95635986328125px;
+    border-radius: 0px;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  .collapsible.active .content {
+    display: block;
+    margin-top: -5px;
+  }
+  .content{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+     
+  }
+}
