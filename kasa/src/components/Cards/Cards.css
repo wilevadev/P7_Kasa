@@ -47,7 +47,7 @@
 	z-index: 1;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1023px) {
 	.Cards {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 40px;
@@ -63,11 +63,11 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.outCards {
 		background-color: white;
-		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-top: 22px;
+		margin-bottom: 22px;
 	}
 	.card-container {
 		max-width: 100%;
