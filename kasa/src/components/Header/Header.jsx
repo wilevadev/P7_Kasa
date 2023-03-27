@@ -9,8 +9,8 @@ function Header() {
         <img src={logo} className="logo-kasa" alt="logo kasa" />
       </Link>
       <nav>
-        <NavLink className={({isActive}) => isActive ? "link link-active" : "link" } end to="/">Accueil</NavLink>
-        <NavLink className={({isActive}) => isActive ? "link link-active" : "link" } end to="/about">A Propos</NavLink>  
+        <NavLink className={({isActive}) => isActive ? "link link-active" : "link" } to="/">Accueil</NavLink>
+        <NavLink className={({isActive}) => isActive ? "link link-active" : "link" } to="/about">A Propos</NavLink>  
       </nav>
     </header>
   );
