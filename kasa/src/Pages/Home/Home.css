@@ -33,7 +33,7 @@
       top: 31px;
       left: 18px;
       transform: none;
-      white-space: nowrap;
+      white-space: pre-wrap;
       }
       .banner-title span {
        display: block; 

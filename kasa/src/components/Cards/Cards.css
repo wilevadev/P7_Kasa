@@ -45,6 +45,7 @@
 	color: white;
 	font-size: 18px;
 	z-index: 1;
+	white-space: pre-wrap;
 }
 
 @media screen and (max-width: 1023px) {
@@ -78,8 +79,7 @@
 	}
 	.Cards p {
 		position: absolute;
-		margin-top: 20px;
-		text-align: center;
+		text-align: left;
 	}
 	.Cards {
 		grid-template-columns: 1fr;
