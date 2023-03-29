@@ -15,12 +15,12 @@ const Stars = ({ rating }) => {
   return (
     <div className="star-rating">
       {/* Affichage des étoiles vides */}
-      {[...Array(emptyStars)].map((_, index) => (
-        <img key={index} src={starIcon} alt="Star" className="star empty" />
+      {[...Array(emptyStars)].map((_, starsv) => (
+        <img key={starsv} src={starIcon} alt="Star" className="star empty" />
       ))}
       {/* Affichage des étoiles remplies */}
-      {[...Array(filledStars)].map((_, index) => (
-        <img key={index} src={starIcono} alt="Star" className="star filled" />
+      {[...Array(filledStars)].map((_, starsv) => (
+        <img key={starsv} src={starIcono} alt="Star" className="star filled" />
       ))}
     </div>
   );
